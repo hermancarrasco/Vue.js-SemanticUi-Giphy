@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="ui inverted segment">
+      <div class="ui inverted secondary pointing menu">
+        <a class="item active">
+          App conectada a la api de Giphy
+        </a>
+      </div>
+    </div>
+    <div class="ui container">
+      <test></test>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import test from './components/test.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    test
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+  @import "~semantic-ui/dist/semantic.min.css"
+  body
+    background-color: grey
 </style>
